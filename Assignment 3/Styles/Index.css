@@ -9,101 +9,16 @@ body{
   align-items: center;
   height: 50vh;
 }
-a {
-  display: flex;
-  text-decoration: none;
-  color: white;
-}
-/* Media Query for Mobile */
-@media (max-width: 768px) {
-  body {
-    display: block;
-  }
-  .frame-container {
-    box-sizing: border-box;
-    padding: 0px 0px 0px 50px;
-    border: 15px solid rgb(212, 207, 207);
-    margin-left: 10px;
-    margin-top: 580px;
-    background-color: rgb(147, 150, 187);
-    width: 560px;
-    height: 380px;
-}
-.Novus-Watch-container {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 0px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  position: relative;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  margin-left: 65px;
-  width: 300px;
-  align-items: stretch;
-}
-.novus-watch-heading {
-  font-size: 12px;
-  color: #1a1919;
-  background-color: rgb(248, 244, 187);
-  padding: 3px 10px;
-  border-radius: 5px 16px 16px 5px;
-  position: absolute;
-  top: -3px;
-  left: -7px;
-  width: 115px;
-  letter-spacing: normal; 
-}
-
-img {
-  width: 280px;
-  max-height: 170px;
-  border-radius: 5px 5px 0px 0px;
-  }
-
-  p {
-    font-size: 12px;
-    color: #000000;
-    line-height: 1.2;
-    margin-top: 10px;
-    margin-left: 10px;
-    align-items: stretch;
-  }
-
-  h2 {
-    font-size: 16px;
-    color: #000000;
-    line-height: 1.3;
-    margin-top: 10px;
-    margin-left: 10px;
-    align-items: stretch;
-    letter-spacing: normal;
-  }
-}
-
-/* Tablet Adjustments */
-@media (max-width: 1024px) and (min-width: 768px) {
-  .frame-container {
-    width: 100%; /* For screens 768px width or more (tablet) */
-  }
-}
-
-/* Responsive styling for desktop */
-@media (min-width: 1024px) {
-  .frame-container {
-    width: 100%; /* For screens 1024px wide or more (desktop) */
-  }
-}
 /* Styling for the frame container */
 .frame-container {
     box-sizing: border-box;
-    padding: 0px 0px 0px 50px;
+    padding: 5px;
     border: 15px solid rgb(212, 207, 207);
-    margin-left: 10px;
-    margin-top: 180px;
+    margin-left: 0px;
+    margin-top: 290px;
     background-color: rgb(147, 150, 187);
-    width: 560px;
-    height: 380px;
+    width: 450px;
+    height: 390px;
 }
 /* Styling for the Novus Watch container */
 .Novus-Watch-container {
@@ -113,9 +28,9 @@ img {
   padding: 0px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   position: relative;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 20px;
-  margin-left: 65px;
+  margin-left: 55px;
   width: 300px;
   align-items: stretch;
 }
@@ -160,3 +75,48 @@ p {
     width: 280px;
     align-items: stretch;
   }
+/* Responsive styling for mobile screens */
+@media only screen and (max-width: 600px) {
+ .frame-container {
+    box-sizing: border-box;
+    max-width: 100%; 
+}
+.Novus-Watch-container {
+  max-width: 100%;
+  height: 300px;
+ box-sizing: border-box;
+ margin-left: 40px;
+ margin-top: 8px;
+}
+.novus-watch-heading {
+  max-width: 100%;
+  letter-spacing: normal; 
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0px 0px;
+  
+  }
+
+  p {
+    font-size: 12px;
+    color: #000000;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  h2 {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.3;
+    margin-top: 10px;
+    margin-left: 10px;
+    align-items: stretch;
+    letter-spacing: normal;
+  }
+}
+
+
