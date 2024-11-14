@@ -23,7 +23,9 @@ body
   width: 550px;
   box-sizing: border-box;
 }
-
+a {
+  color: white;
+}
 /* Responsive styling for mobile */
 @media only screen and (max-width: 600px) {
   .main {

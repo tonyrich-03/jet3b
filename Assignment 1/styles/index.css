@@ -15,7 +15,11 @@ body {
   position: absolute;
   margin-top: 180px;
 }
-
+a {
+  color: white;
+  display: flex;
+  position: absolute;
+}
 /* Media Query for Mobile */
 @media (max-width: 768px) {
   .front-page {
